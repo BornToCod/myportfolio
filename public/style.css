@@ -1,0 +1,28 @@
+*{
+    color: #113946 !important;
+    text-shadow: 0 0  10px white !important;
+}
+/* header > img{
+    filter: invert(1);
+} */
+/* body{
+    background-color: #FFF2D8;
+} */
+/* Style for navigation links */
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+/* Style for the animated line */
+.line {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #2563EB; /* Change this to your desired line color */
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s;
+}
