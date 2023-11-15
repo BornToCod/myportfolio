@@ -1,13 +1,23 @@
 *{
-    color: #453C67 !important;
+    /* color: rgb(98, 97, 93) !important; */
     text-shadow: 0 0  10px white !important;
+}
+#logo{
+    color: #116D6E;
+    font-size: xxx-large;
+    font-weight: 500;
+    font-style: italic;
+    font-family: system-ui;
 }
 /* header > img{
     filter: invert(1);
 } */
-/* body{
-    background-color: #FFF2D8;
-} */
+
+#contact{
+    top: 65vh;
+    left: 66VW;
+    width: 200px;
+}
 /* Style for navigation links */
 .nav-link {
     position: relative;

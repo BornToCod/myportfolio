@@ -7,14 +7,17 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
   <link rel="stylesheet" href="/public/build/tailwind.css">
   <link rel="stylesheet"  href="/public/style.css">
+  <script src="https://kit.fontawesome.com/4fbdf13592.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.2/css/all.min.css">
 
   <title>Welcome to Tailwind!</title>
 </head>
-<body class="bg-gradient-to-r from-green-200 to-blue-200"> 
-  <!-- <div style='filter:blur(10px);background-image:url("https://r4.wallpaperflare.com/wallpaper/670/710/426/photograph-of-white-boats-on-dock-near-the-city-during-golden-hour-wallpaper-c53da103194b5cf4997c66c8813a5e9b.jpg"); background-size:cover;width:100vw;height:100vh;position:fixed;z-index:-1000;''></div>    -->
+<body class="bg-orange-100"> 
+  <div style='background-image:url("/back1.webp"); background-size:cover;width:100vw;height:550px;position:absolute;z-index:-1000;'></div>   
   <div class="container max-w-screen-xl mx-auto px-4">
    <header class="flex flex-row justify-between items-center px-3 py-3">
-      <img src="/logo1.png" class="w-40 h-16" alt="" >
+      <!-- <img src="/logo1.png" class="w-40 h-16" alt="" > -->
+      <h1 id="logo">Portfolio</h1>
       <button
       class="block md:hidden text-black text-2xl"
       id="menu-toggle"
@@ -22,18 +25,18 @@
       &#9776;
   </button>
       <nav class="hidden md:flex " id="nav-menu" >
-          <a href="#" class="text-black  font-bold mx-5 my-3  cursor-pointer hover:text-white">Home</a>
-          <a href="#" class="text-black  font-bold mx-5 my-3  cursor-pointer hover:text-white">About</a>
-          <a href="#" class="text-black  font-bold mx-5 my-3 cursor-pointer hover:text-white">Services</a>
-          <a href="#" class="text-black font-bold  mx-5 my-3  cursor-pointer hover:text-white">Contact</a>
+          <a href="#" class="text-white  font-bold mx-5 my-3  cursor-pointer hover:text-yellow-700">Home</a>
+          <a href="#" class="text-white  font-bold mx-5 my-3  cursor-pointer hover:text-yellow-700">About</a>
+          <a href="#" class="text-white  font-bold mx-5 my-3 cursor-pointer hover:text-yellow-700">Services</a>
+          <a href="#" class="text-white font-bold  mx-5 my-3  cursor-pointer hover:text-yellow-700">Contact</a>
            
       </nav>
    </header>
    
    <nav class="hidden flex-col items-center text-center bg-dark text-black" id="nav-menu-small">
-      <a href="#" class="text-2xl my-3 font-bold cursor-pointer  ">Home</a>
-      <a href="#" class="text-2xl my-3 font-bold cursor-pointer  ">About</a>
-      <a href="#" class="text-2xl my-3 font-bold cursor-pointer  ">Services</a>
+      <a href="#" class="text-2xl my-3 font-bold cursor-pointer hover:text-yellow-700">Home</a>
+      <a href="#" class="text-2xl my-3 font-bold cursor-pointer ">About</a>
+      <a href="#" class="text-2xl my-3 font-bold cursor-pointer ">Services</a>
       <a href="#" class="text-2xl my-3 font-bold cursor-pointer ">Contact</a>
       <div class="line"></div>
 
@@ -50,32 +53,50 @@
       </div>
   </section>
 </div> -->
-<div class="bg-transparent p-8 flex flex-col md:flex-row items-center">
+<div class="bg-transparent p-8 flex flex-col md:flex-row justify-between items-center mt-16 pt-4">
     <!-- Left Section: Name and Bio -->
-    <div class="md:w-1/2">
-      <h2 class="text-3xl font-semibold text-gray-800">Abdelali Elhaddad</h2>
-      <p class="text-gray-600 mt-4">
-        Your bio or description goes here. You can provide a brief introduction about yourself, your skills, and your interests.
-      </p>
+    <div class="md:w-1/2 ml-10">
+      <h2 class="text-3xl font-semibold text-black">Hi,</h2>
+      <h2 class="text-3xl font-semibold ">I'm <i class="text-green-800">Abdelali Elhaddad</i>,</h2>
+      <h2 class="text-black   mt-4 text-3xl font-semibold">
+         I'm a fullstack developer.
+      </h2>
     </div>
   
     <!-- Right Section: Picture -->
-    <div class="md:w-1/2 mt-6 md:mt-0">
-      <img src="/mypic.jpg" alt="Your Name" class="rounded-full h-48 w-48 mx-auto">
+    <div class="md:w-1/3 mt-6 md:mt-0 flex flex-col items-center">
+      <img src="/mypic.jpg" alt="Your Name" class="rounded-full h-48 w-48 mx-auto cursor-pointer">
+      <div id="contact" class=" text-white py-2 mt-4">
+        <div class="container mx-auto flex justify-center space-x-4">
+            <a href="https://facebook.com/your-facebook" target="_blank" class="text-xl text-gray-200 hover:text-yellow-700 transition duration-300 transform hover:scale-150">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="https://twitter.com/your-twitter" target="_blank" class="text-xl text-gray-200 hover:text-yellow-700 transition duration-300 transform hover:scale-150">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://t.me/your-telegram" target="_blank" class="text-xl text-gray-200 hover:text-yellow-700 transition duration-300 transform hover:scale-150">
+                <i class="fab fa-telegram"></i>
+              </a>
+              <a href="https://github.com/your-github" target="_blank" class="text-xl text-gray-100 hover:text-yellow-700 transition duration-300 transform hover:scale-150">
+                <i class="fab fa-github"></i>
+              </a>
+        </div>
+      </div>
     </div>
   </div>
   
+  
 
 <!-- projects -->
-<section id="projects" class="bg-transparent p-8">
-  <div class="container mx-auto">
-      <h2 class="text-3xl font-bold mb-4">my projects</h2>
+<section id="projects" class="bg-transparent p-8 mt-48">
+  <div id="card" class="container mx-auto">
+      <h2  class="text-3xl font-bold mb-4">my projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Project 1 -->
           <div class="bg-white p-4 rounded shadow-lg">
               <img src="/pic2.jpg" alt="Project 1" class="w-full h-auto">
-              <h3 class="text-xl font-semibold my-2">Project 1</h3>
-              <p class="text-gray-700">Description of Project 1...</p>
+              <h3 id="name" class="text-xl font-semibold my-2"></h3>
+              <p id="Description" class="text-gray-700">Description of Project 1...</p>
           </div>
           <!-- Repeat for other projects -->
       </div>

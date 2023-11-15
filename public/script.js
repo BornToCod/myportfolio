@@ -14,6 +14,48 @@ window.addEventListener('resize', () => {
     }
 });
 
+const token='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';
+// Your GitHub API fetch code (as shown in the previous response)
+const apiUrl = `https://api.github.com/users/${'BornToCod'}/repos`;
+
+fetch(apiUrl, {
+  headers: {
+    Authorization: `token ${token}`,
+  },
+})
+  .then((response) => response.json())
+  .then((data) => {
+    // Reference to the project section container
+    const projectSection = document.getElementById('projects');
+
+    // Loop through your GitHub projects and create a card for each
+    data.forEach((project) => {
+      const card = document.createElement('div');
+      card.classList.add('bg-white', 'p-4','mx-auto', 'container', 'shadow-lg');
+       
+      const title = document.createElement('h2');
+      title.textContent = project.name;
+      title.classList.add('text-xl', 'font-semibold', 'mb-2');
+
+      const description = document.createElement('p');
+      description.textContent = project.description;
+      description.classList.add('text-gray-700');
+
+      const link = document.createElement('a');
+      link.href = project.html_url;
+      link.textContent = 'View on GitHub';
+      link.classList.add('text-blue-600', 'hover:underline', 'block');
+
+      card.appendChild(title);
+      card.appendChild(description);
+      card.appendChild(link);
+
+      // Append the card to the project section container
+      projectSection.appendChild(card);
+    });
+  })
+  .catch((error) => console.error(error));
+
 // ===========================
 // const phrases = ["Hi my name is abdelali elhaddad","I am a fullstack developer.", "I am a game developer.", "I am a designer."];
 // const introText = document.getElementById('intro-text');
