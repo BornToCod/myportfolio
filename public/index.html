@@ -9,11 +9,41 @@
   <link rel="stylesheet"  href="/public/style.css">
   <script src="https://kit.fontawesome.com/4fbdf13592.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.2/css/all.min.css">
+  <!-- <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script> -->
+  <script>document.documentElement.classList.add('js')</script>
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
+
 
   <title>Welcome to Tailwind!</title>
+  <style>
+     body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+    }
+
+      </style>
+      <!-- <SCript>
+         AOS.init({
+    duration: 500,
+    easing: 'ease-in-out',
+    once: true, // Only animate elements once
+  });
+      </SCript> -->
+</head>
+
+
+  <!-- The container for your GitHub projects -->
+
+  <!-- Your JavaScript code -->
+
+  
+
+
 </head>
 <body class="bg-orange-100"> 
-  <div style='background-image:url("/back1.webp"); background-size:cover;width:100vw;height:550px;position:absolute;z-index:-1000;'></div>   
+  <div class="md:w-full" style='background-image:url("/back1.webp"); background-size:cover;height:100vh;position:absolute;z-index:-1000;'></div>   
   <div class="container max-w-screen-xl mx-auto px-4">
    <header class="flex flex-row justify-between items-center px-3 py-3">
       <!-- <img src="/logo1.png" class="w-40 h-16" alt="" > -->
@@ -25,19 +55,19 @@
       &#9776;
   </button>
       <nav class="hidden md:flex " id="nav-menu" >
-          <a href="#" class="text-white  font-bold mx-5 my-3  cursor-pointer hover:text-yellow-700">Home</a>
-          <a href="#" class="text-white  font-bold mx-5 my-3  cursor-pointer hover:text-yellow-700">About</a>
-          <a href="#" class="text-white  font-bold mx-5 my-3 cursor-pointer hover:text-yellow-700">Services</a>
-          <a href="#" class="text-white font-bold  mx-5 my-3  cursor-pointer hover:text-yellow-700">Contact</a>
+          <a href="#" class="text-white  font-bold mx-5 my-3  cursor-pointer hover:text-yellow-500 hover:shadow-none">Home</a>
+          <a href="#" class="text-white  font-bold mx-5 my-3  cursor-pointer hover:text-yellow-500">About</a>
+          <a href="#" class="text-white  font-bold mx-5 my-3 cursor-pointer hover:text-yellow-500">Services</a>
+          <a href="#" class="text-white font-bold  mx-5 my-3  cursor-pointer hover:text-yellow-500">Contact</a>
            
       </nav>
    </header>
    
-   <nav class="hidden flex-col items-center text-center bg-dark text-black" id="nav-menu-small">
-      <a href="#" class="text-2xl my-3 font-bold cursor-pointer hover:text-yellow-700">Home</a>
-      <a href="#" class="text-2xl my-3 font-bold cursor-pointer ">About</a>
-      <a href="#" class="text-2xl my-3 font-bold cursor-pointer ">Services</a>
-      <a href="#" class="text-2xl my-3 font-bold cursor-pointer ">Contact</a>
+   <nav class="hidden mb-40 flex-col items-center text-center bg-dark text-black" id="nav-menu-small">
+      <a href="#" class="text-2xl my-8 font-bold cursor-pointer hover:text-yellow-500">Home</a>
+      <a href="#" class="text-2xl my-8 font-bold cursor-pointer hover:text-yellow-500 ">About</a>
+      <a href="#" class="text-2xl my-8 font-bold cursor-pointer hover:text-yellow-500">Services</a>
+      <a href="#" class="text-2xl my-8 font-bold cursor-pointer hover:text-yellow-500">Contact</a>
       <div class="line"></div>
 
   </nav>
@@ -56,9 +86,9 @@
 <div class="bg-transparent p-8 flex flex-col md:flex-row justify-between items-center mt-16 pt-4">
     <!-- Left Section: Name and Bio -->
     <div class="md:w-1/2 ml-10">
-      <h2 class="text-3xl font-semibold text-black">Hi,</h2>
-      <h2 class="text-3xl font-semibold ">I'm <i class="text-green-800">Abdelali Elhaddad</i>,</h2>
-      <h2 class="text-black   mt-4 text-3xl font-semibold">
+      <h2 class="md:text-3xl text-xl font-semibold text-black">Hi,</h2>
+      <h2 class="md:text-3xl text-xl font-semibold ">I'm <i class="text-green-800">Abdelali Elhaddad</i>,</h2>
+      <h2 class="text-black text-xl   mt-4 md:text-3xl font-semibold">
          I'm a fullstack developer.
       </h2>
     </div>
@@ -68,16 +98,16 @@
       <img src="/mypic.jpg" alt="Your Name" class="rounded-full h-48 w-48 mx-auto cursor-pointer">
       <div id="contact" class=" text-white py-2 mt-4">
         <div class="container mx-auto flex justify-center space-x-4">
-            <a href="https://facebook.com/your-facebook" target="_blank" class="text-xl text-gray-200 hover:text-yellow-700 transition duration-300 transform hover:scale-150">
+            <a href="https://facebook.com/your-facebook" target="_blank" class="text-xl text-black md:text-gray-200 hover:text-yellow-500 transition duration-300 transform hover:scale-150">
                 <i class="fab fa-facebook"></i>
               </a>
-              <a href="https://twitter.com/your-twitter" target="_blank" class="text-xl text-gray-200 hover:text-yellow-700 transition duration-300 transform hover:scale-150">
+              <a href="https://twitter.com/your-twitter" target="_blank" class="text-xl text-black md:text-gray-200 hover:text-yellow-500 transition duration-300 transform hover:scale-150">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="https://t.me/your-telegram" target="_blank" class="text-xl text-gray-200 hover:text-yellow-700 transition duration-300 transform hover:scale-150">
+              <a href="https://t.me/your-telegram" target="_blank" class="text-xl text-black md:text-gray-200 hover:text-yellow-500 transition duration-300 transform hover:scale-150">
                 <i class="fab fa-telegram"></i>
               </a>
-              <a href="https://github.com/your-github" target="_blank" class="text-xl text-gray-100 hover:text-yellow-700 transition duration-300 transform hover:scale-150">
+              <a href="https://github.com/your-github" target="_blank" class="text-xl text-black md:text-gray-100 hover:text-yellow-500 transition duration-300 transform hover:scale-150">
                 <i class="fab fa-github"></i>
               </a>
         </div>
@@ -85,23 +115,22 @@
     </div>
   </div>
   
-  
+  <div id="projects" class="my-56 mx-6 p-6 container grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 place-items-center gap-1"></div>
+
 
 <!-- projects -->
-<section id="projects" class="bg-transparent p-8 mt-48">
+<!-- <section id="projects" class="bg-transparent p-8 mt-48">
   <div id="card" class="container mx-auto">
       <h2  class="text-3xl font-bold mb-4">my projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <!-- Project 1 -->
           <div class="bg-white p-4 rounded shadow-lg">
               <img src="/pic2.jpg" alt="Project 1" class="w-full h-auto">
               <h3 id="name" class="text-xl font-semibold my-2"></h3>
               <p id="Description" class="text-gray-700">Description of Project 1...</p>
           </div>
-          <!-- Repeat for other projects -->
       </div>
   </div>
-</section>
+</section> -->
 
 <!-- contact section   -->
 <section id="contact" class="bg-transparent p-8">
@@ -165,10 +194,13 @@
 
 
 
+<script>
+  // Initialize ScrollReveal
+</script>
+
 <!-- <script src="./node_modules/typed.js@2.0.12@typed.js"></script> -->
 <script src="/public/script.js"></script>
-
-
+<script src="/node_modules/taos/dist/taos.js"></script>
   
 </body>
 </html>

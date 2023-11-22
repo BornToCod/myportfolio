@@ -1,6 +1,34 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* #projects {
+    @apply flex flex-wrap justify-around max-w-screen-md mx-auto my-20;
+  }
+
+  .project-card {
+    @apply bg-white p-8 rounded shadow-lg transition-transform transform scale-100 hover:scale-105;
+  }
+
+  .project-title {
+    @apply text-2xl font-bold mb-2;
+  }
+
+  .project-description {
+    @apply text-gray-700;
+  }
+
+  .project-link {
+    @apply text-blue-600 hover:underline block mt-2;
+  } */
+
 *{
     /* color: rgb(98, 97, 93) !important; */
-    text-shadow: 0 0  10px white !important;
+    /* text-shadow: 0 0  10px white !important; */
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
 }
 #logo{
     color: #116D6E;
@@ -35,4 +63,59 @@
     bottom: -5px;
     left: 0;
     transition: width 0.3s;
+}
+#projects {
+  /* display: flex;
+  flex-wrap: wrap; */
+  justify-content: space-around;
+  max-width: 100%;
+  /* margin: 20px auto; */
+}
+
+.project-card {
+  /* width: 200px; */
+  display: grid;
+  place-items: center;
+  background-color: #116D6E;
+  height: 400px;
+  width: 300px;
+  margin-bottom: 20px;
+  margin: 30px 10px;
+  /* opacity: 0; */
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+  /* color: antiquewhite;
+  padding: 20px;
+ 
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; */
+}
+.project-card.sr-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  color: white;
+}
+
+.project-link {
+  color: #6e0a84;
+  text-decoration: none;
+  display: block;
+  margin-top: 10px;
+}
+
+.project-link:hover {
+  text-decoration: underline;
 }
