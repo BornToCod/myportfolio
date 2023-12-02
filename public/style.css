@@ -71,6 +71,16 @@ body{
   max-width: 100%;
   /* margin: 20px auto; */
 }
+.project-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .project-card {
   /* width: 200px; */
@@ -81,9 +91,9 @@ body{
   width: 300px;
   margin-bottom: 20px;
   margin: 30px 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
   /* opacity: 0; */
-  transform: translateY(20px);
-  transition: opacity 0.5s, transform 0.5s;
   /* color: antiquewhite;
   padding: 20px;
  
