@@ -3,47 +3,58 @@ const navMenu = document.getElementById('nav-menu');
 const navMenuSmall = document.getElementById('nav-menu-small');
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Get all project cards
-  const projectCards = document.querySelectorAll(".animate-on-scroll");
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Get all project cards
+//   const projectCards = document.querySelectorAll(".animate-on-scroll");
 
-  // Set up the Intersection Observer
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.5 } // Adjust the threshold as needed
-  );
+//   // Set up the Intersection Observer
+//   const observer = new IntersectionObserver(
+//     (entries, observer) => {
+//       entries.forEach((entry) => {
+//         if (entry.isIntersecting) {
+//           entry.target.classList.add("visible");
+//           observer.unobserve(entry.target);
+//         }
+//       });
+//     },
+//     { threshold: 0.5 } // Adjust the threshold as needed
+//   );
 
-  // Observe each project card
-  projectCards.forEach((card) => {
-    observer.observe(card);
-  });
-});
-
-// ScrollReveal().reveal('.project-card', { delay: 200, duration: 500, easing: 'ease-in-out' });
-
+//   // Observe each project card
+//   projectCards.forEach((card) => {
+//     observer.observe(card);
+//   });
+// });
 menuButton.addEventListener('click', () => {
-    navMenuSmall.classList.toggle('hidden');
-    navMenuSmall.classList.toggle('flex');
-    navMenuSmall.classList.toggle('flex-row');
+  navMenuSmall.classList.toggle('hidden');
+  navMenuSmall.classList.toggle('flex');
+  navMenuSmall.classList.toggle('flex-row');
 });
 window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) { 
-        navMenuSmall.classList.add('hidden');
-        navMenuSmall.classList.remove('flex', 'flex-row');
-    }
+  if (window.innerWidth > 768) { 
+      navMenuSmall.classList.add('hidden');
+      navMenuSmall.classList.remove('flex', 'flex-row');
+  }
 });
 
 
+// // ScrollReveal().reveal('.project-card', { delay: 200, duration: 500, easing: 'ease-in-out' });
 
-// const token='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';
-// // Your GitHub API fetch code (as shown in the previous response)
+// menuButton.addEventListener('click', () => {
+//     navMenuSmall.classList.toggle('hidden');
+//     navMenuSmall.classList.toggle('flex');
+//     navMenuSmall.classList.toggle('flex-row');
+// });
+// window.addEventListener('resize', () => {
+//     if (window.innerWidth > 768) { 
+//         navMenuSmall.classList.add('hidden');
+//         navMenuSmall.classList.remove('flex', 'flex-row');
+//     }
+// });
+
+
+
+// const token = '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';
 // const apiUrl = `https://api.github.com/users/${'BornToCod'}/repos`;
 
 // fetch(apiUrl, {
@@ -53,88 +64,39 @@ window.addEventListener('resize', () => {
 // })
 //   .then((response) => response.json())
 //   .then((data) => {
-//     // Reference to the project section container
+    
 //     const projectSection = document.getElementById('projects');
 
-//     // Loop through your GitHub projects and create a card for each
-//     data.forEach((project) => {
-//       const card = document.createElement('div');
-//       card.classList.add('bg-white', 'p-4','mx-auto', 'container', 'shadow-lg');
-       
-//       const title = document.createElement('h2');
-//       title.textContent = project.name;
-//       title.classList.add('text-xl', 'font-semibold', 'mb-2');
+//     if (Array.isArray(data)) {
+//       data.forEach((project) => {
+//         const card = document.createElement('div');
+//         card.classList.add('project-card','animate-on-scroll','max-w-sm', 'mx-3', 'my-3', 'h-auto', 'rounded-xl', 'shadow-md', 'overflow-hidden', 'hover:shadow-lg', 'hover:transform' ,'hover:scale-105' );
+//         card.setAttribute('data-aos','fade-up');
 
-//       const description = document.createElement('p');
-//       description.textContent = project.description;
-//       description.classList.add('text-gray-700');
+//         const title = document.createElement('h2');
+//         title.textContent = project.name;
+//         title.classList.add('project-title');
 
-//       const link = document.createElement('a');
-//       link.href = project.html_url;
-//       link.textContent = 'View on GitHub';
-//       link.classList.add('text-blue-600', 'hover:underline', 'block');
+//         const description = document.createElement('p');
+//         description.textContent = project.description;
+//         description.classList.add('project-description');
 
-//       card.appendChild(title);
-//       card.appendChild(description);
-//       card.appendChild(link);
+//         const link = document.createElement('a');
+//         link.href = project.html_url;
+//         link.textContent = 'View on GitHub';
+//         link.classList.add('project-link');
 
-//       // Append the card to the project section container
-//       projectSection.appendChild(card);
-//     });
+//         card.appendChild(title);
+//         card.appendChild(description);
+//         card.appendChild(link);
+
+//         projectSection.appendChild(card);
+//       });
+//     } else {
+//       console.error('Data is not an array:', data);
+//     }
 //   })
 //   .catch((error) => console.error(error));
-
-
-
-const token = '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';
-const apiUrl = `https://api.github.com/users/${'BornToCod'}/repos`;
-
-fetch(apiUrl, {
-  headers: {
-    Authorization: `token ${token}`,
-  },
-})
-  .then((response) => response.json())
-  .then((data) => {
-    // Log the data to the console to inspect its structure
-    // console.log(data);
-
-    // Reference to the project section container
-    const projectSection = document.getElementById('projects');
-
-    // Check if data is an array before using forEach
-    if (Array.isArray(data)) {
-      // Loop through your GitHub projects and create a card for each
-      data.forEach((project) => {
-        const card = document.createElement('div');
-        card.classList.add('project-card','animate-on-scroll','max-w-sm', 'mx-3', 'my-3', 'h-auto', 'rounded-xl', 'shadow-md', 'overflow-hidden', 'hover:shadow-lg', 'hover:transform' ,'hover:scale-105' );
-        card.setAttribute('data-aos','fade-up');
-
-        const title = document.createElement('h2');
-        title.textContent = project.name;
-        title.classList.add('project-title');
-
-        const description = document.createElement('p');
-        description.textContent = project.description;
-        description.classList.add('project-description');
-
-        const link = document.createElement('a');
-        link.href = project.html_url;
-        link.textContent = 'View on GitHub';
-        link.classList.add('project-link');
-
-        card.appendChild(title);
-        card.appendChild(description);
-        card.appendChild(link);
-
-        // Append the card to the project section container
-        projectSection.appendChild(card);
-      });
-    } else {
-      console.error('Data is not an array:', data);
-    }
-  })
-  .catch((error) => console.error(error));
 
 // ===========================
 // const phrases = ["Hi my name is abdelali elhaddad","I am a fullstack developer.", "I am a game developer.", "I am a designer."];
