@@ -128,3 +128,15 @@ body{
 .project-link:hover {
   text-decoration: underline;
 }
+#SV{
+  position: absolute; 
+top: -15px; 
+padding: 0.75rem; 
+}
+
+svg{
+  color:white;
+}
+i{
+  display:block;
+}
