@@ -5,34 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
-  <link rel="stylesheet" href="/public/build/tailwind.css">
-  <link rel="stylesheet"  href="/public/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"  href="../public/style.css">
   <script src="https://kit.fontawesome.com/4fbdf13592.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.2/css/all.min.css">
   <!-- <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script> -->
   <script>document.documentElement.classList.add('js')</script>
 
-  <!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> 
 
 
   <title>Welcome to Tailwind!</title>
   <style>
      body {
       font-family: 'Arial', sans-serif;
-      background-color: #f0f0f0;
+      background-color: #04638c !important
+    }
+    #services_header{
+        color:#FFFFCC;
     }
 
       </style>
-      <!-- <SCript>
-         AOS.init({
-    duration: 500,
-    easing: 'ease-in-out',
-    once: true, // Only animate elements once
-  });
-      </SCript> -->
+     
 </head>
-
+ 
 
   <!-- The container for your GitHub projects -->
 
@@ -41,15 +38,14 @@
   
 
 
-</head>
 <body class="bg-orange-100"> 
-  <div class="md:w-full" style='background-image:url("/back1.webp"); background-size:cover;height:100vh;position:absolute;z-index:-1000;'></div>   
-  <div class="container max-w-screen-xl mx-auto px-4">
-   <header class="flex flex-row justify-between items-center px-3 py-3">
+  <div class="lg:w-full" style='background-image:url("https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/d12425a2-57e5-445b-896d-425ad79fd2ca/1410412/back1.webp");background-size:cover;height:100vh;position:absolute;z-index:-1000;'></div>   
+  <div class=" container max-w-screen-xl mx-auto px-4">
+   <header class="flex flex-row justify-between flex-wrap items-center px-3 py-3">
       <!-- <img src="/logo1.png" class="w-40 h-16" alt="" > -->
       <h1 id="logo">Portfolio</h1>
       <button
-      class="block md:hidden text-black text-2xl"
+      class="block md:hidden text-white text-2xl"
       id="menu-toggle"
   >
       &#9776;
@@ -64,10 +60,10 @@
    </header>
    
    <nav class="hidden mb-40 flex-col items-center text-center bg-dark text-black" id="nav-menu-small">
-      <a href="#" class="text-2xl my-8 font-bold cursor-pointer hover:text-yellow-500">Home</a>
-      <a href="#" class="text-2xl my-8 font-bold cursor-pointer hover:text-yellow-500 ">About</a>
-      <a href="#" class="text-2xl my-8 font-bold cursor-pointer hover:text-yellow-500">Services</a>
-      <a href="#" class="text-2xl my-8 font-bold cursor-pointer hover:text-yellow-500">Contact</a>
+      <a href="#" class="text-2xl text-white my-8 font-bold cursor-pointer hover:text-yellow-500">Home</a>
+      <a href="#" class="text-2xl text-white my-8 font-bold cursor-pointer hover:text-yellow-500 ">About</a>
+      <a href="#" class="text-2xl text-white my-8 font-bold cursor-pointer hover:text-yellow-500">Services</a>
+      <a href="#" class="text-2xl text-white my-8 font-bold cursor-pointer hover:text-yellow-500">Contact</a>
       <div class="line"></div>
 
   </nav>
@@ -83,31 +79,31 @@
       </div>
   </section>
 </div> -->
-<div class="bg-transparent p-8 flex flex-col md:flex-row justify-between items-center mt-16 pt-4">
+<div class="bg-transparent p-8 flex flex-col lg:flex-row justify-between items-center mt-16 pt-4">
     <!-- Left Section: Name and Bio -->
-    <div class="md:w-1/2 ml-10">
-      <h2 class="md:text-3xl text-xl font-semibold text-black">Hi,</h2>
-      <h2 class="md:text-3xl text-xl font-semibold ">I'm <i class="text-green-800">Abdelali Elhaddad</i>,</h2>
-      <h2 class="text-black text-xl   mt-4 md:text-3xl font-semibold">
+    <div class="md:w-1/2 sm:w-full ml-10">
+      <h2 class="md:text-3xl sm:text-xl font-semibold lg:text-black text-white">Hi,</h2>
+      <h2 class="md:text-3xl sm:text-xl font-semibold lg:text-black text-white">I'm <i class="text-green-800">Abdelali Elhaddad</i></h2>
+      <h2 class="lg:text-black text-white sm:text-xl   mt-4 md:text-3xl font-semibold">
          I'm a fullstack developer.
       </h2>
     </div>
   
     <!-- Right Section: Picture -->
-    <div class="md:w-1/3 mt-6 md:mt-0 flex flex-col items-center">
-      <img src="/mypic.jpg" alt="Your Name" class="rounded-full h-48 w-48 mx-auto cursor-pointer">
+    <div class="md:w-1/3  mt-6 md:mt-0 flex flex-col items-center">
+      <img src="../mypic.jpg" alt="Your Name" class="rounded-full h-48 w-48 mx-auto cursor-pointer">
       <div id="contact" class=" text-white py-2 mt-4">
         <div class="container mx-auto flex justify-center space-x-4">
-            <a href="https://facebook.com/your-facebook" target="_blank" class="text-xl text-black md:text-gray-200 hover:text-yellow-500 transition duration-300 transform hover:scale-150">
+            <a href="https://facebook.com/your-facebook" target="_blank" class="text-xl  md:text-white hover:text-yellow-500 transition duration-300 transform hover:scale-150">
                 <i class="fab fa-facebook"></i>
               </a>
-              <a href="https://twitter.com/your-twitter" target="_blank" class="text-xl text-black md:text-gray-200 hover:text-yellow-500 transition duration-300 transform hover:scale-150">
+              <a href="https://twitter.com/your-twitter" target="_blank" class="text-xl  md:text-white hover:text-yellow-500 transition duration-300 transform hover:scale-150">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="https://t.me/your-telegram" target="_blank" class="text-xl text-black md:text-gray-200 hover:text-yellow-500 transition duration-300 transform hover:scale-150">
+              <a href="https://t.me/your-telegram" target="_blank" class="text-xl md:text-white hover:text-yellow-500 transition duration-300 transform hover:scale-150">
                 <i class="fab fa-telegram"></i>
               </a>
-              <a href="https://github.com/your-github" target="_blank" class="text-xl text-black md:text-gray-100 hover:text-yellow-500 transition duration-300 transform hover:scale-150">
+              <a href="https://github.com/your-github" target="_blank" class="text-xl  md:text-gray-100 hover:text-yellow-500 transition duration-300 transform hover:scale-150">
                 <i class="fab fa-github"></i>
               </a>
         </div>
@@ -120,7 +116,7 @@
 <!-- projects -->
 <section id="projects" class="bg-transparent mt-32 p-8 mx-auto">
 <div class="container grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 place-items-center  mx-auto gap-1">
-<div class="project-card max-w-sm mx-5 my-5 h-auto bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:transform hover:scale-105 transition-transform">
+<div data-aos="fade-left" class="project-card max-w-sm mx-5 my-5 h-auto bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:transform hover:scale-105 transition-transform">
     <img class="h-48 w-full object-cover" src="https://source.unsplash.com/random" alt="">
     <div class="p-6">
         <div class="flex items-center justify-between">
@@ -141,7 +137,7 @@
         </div>
     </div>
 </div>
-<div class="max-w-sm mx-5 my-5 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:transform hover:scale-105 transition-transform">
+<div data-aos="fade-left" class="max-w-sm mx-5 my-5 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:transform hover:scale-105 transition-transform">
     <img class="h-48 w-full object-cover" src="https://source.unsplash.com/random" alt="">
     <div class="p-6">
         <div class="flex items-center justify-between">
@@ -162,7 +158,7 @@
         </div>
     </div>
 </div>
-<div class="max-w-sm mx-5 my-5 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:transform hover:scale-105 transition-transform">
+<div data-aos="fade-left" class="max-w-sm mx-5 my-5 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:transform hover:scale-105 transition-transform">
     <img class="h-48 w-full object-cover" src="https://source.unsplash.com/random" alt="">
     <div class="p-6">
         <div class="flex items-center justify-between">
@@ -184,7 +180,7 @@
         </div>
     </div>
 </div>
-<div class="max-w-sm mx-5 my-5 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:transform hover:scale-105 transition-transform">
+<div data-aos="fade-left" class="max-w-sm mx-5 my-5 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:transform hover:scale-105 transition-transform">
     <img class="h-48 w-full object-cover" src="https://source.unsplash.com/random" alt="">
     <div class="p-6">
         <div class="flex items-center justify-between">
@@ -205,7 +201,7 @@
         </div>
     </div>
 </div>
-<div class="max-w-sm mx-5 my-5 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:transform hover:scale-105 transition-transform">
+<div data-aos="fade-left" class="max-w-sm mx-5 my-5 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:transform hover:scale-105 transition-transform">
     <img class="h-48 w-full object-cover" src="https://source.unsplash.com/random" alt="">
     <div class="p-6">
         <div class="flex items-center justify-between">
@@ -226,7 +222,7 @@
         </div>
     </div>
 </div>
-<div class="max-w-sm mx-5 my-5 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:transform hover:scale-105 transition-transform">
+<div data-aos="fade-left" class="max-w-sm mx-5 my-5 bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:transform hover:scale-105 transition-transform">
     <img class="h-48 w-full object-cover" src="https://source.unsplash.com/random" alt="">
     <div class="p-6">
         <div class="flex items-center justify-between">
@@ -248,7 +244,7 @@
     </div>
 </div>
 </div>
-
+</section>
 
 
 <!-- <section id="services" class="bg-gradient-to-b  bg-transparent text-green-800 py-20">
@@ -295,67 +291,49 @@
       </div>
     </div>
   </section> -->
-  <div class="grid grid-cols-4 gap-8 p-8 md:p-16 bg-gray-800">
+  
 
-    <div
-        class="col-span-4 sm:col-span-2 lg:col-span-1 relative px-5 pt-10 pb-2 flex flex-col justify-start items-center border-2 border-gray-300 rounded-xl text-gray-300">
-        <span id="SV" class="absolute -top-6 p-3 border-2 border-gray-300 rounded-full bg-gray-800">
-            No strategy for rar extension
-    </span>
-        <h2 class="my-1 gradient-red text-base uppercase tracking-wide">Animated &amp; Responsive</h2>
-        <p class="py-2 text-center text-sm">What makes Fancy Tailwind awesome is that our Tailwind CSS components are -
-            for the most - animated, beautiful and responsive, which make them so cool.</p>
+
+
+
+<!-- Services Section -->
+<section id="services" class="py-20">
+    <div class="container mx-auto">
+        <h2 id="services_header" class="text-3xl font-bold text-center mb-10">My Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Card 1 -->
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Web Development</h3>
+                <p class="text-gray-700">I specialize in creating responsive and dynamic web applications using modern technologies.</p>
+            </div>
+            <!-- Service Card 2 -->
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">UI/UX Design</h3>
+                <p class="text-gray-700">Crafting intuitive and visually appealing user interfaces to enhance user experience.</p>
+            </div>
+            <!-- Service Card 3 -->
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Digital Marketing</h3>
+                <p class="text-gray-700">Strategizing and executing effective digital marketing campaigns to boost online presence.</p>
+            </div>
+        </div>
     </div>
+</section>
 
-
-    <div
-        class="col-span-4 sm:col-span-2 lg:col-span-1 relative px-5 pt-10 pb-2 flex flex-col justify-start items-center border-2 border-gray-300 rounded-xl text-gray-300">
-        <span id="SV" class="absolute -top-6 p-3 border-2 border-gray-300 rounded-full bg-gray-800">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-            aria-hidden="true" class="w-7 h-7 text-yellow-640">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
-        </svg>
-    </span>
-        <h2 class="my-1 gradient-red text-base uppercase tracking-wide">Copy code &amp; Paste</h2>
-        <p class="py-2 text-center text-sm">Simply copy and paste the code I provide to implement Fancy Tailwind
-            components in your projects.</p>
+<!-- About Section -->
+<section id="about" class="py-20 bg-gray-200">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-10">About Me</h2>
+        <div class="flex items-center justify-center">
+            <div class="w-1/2 p-8">
+                <p class="text-gray-700">I'm a passionate and dedicated professional with a strong background in web development and design. I love creating beautiful and functional digital experiences that leave a lasting impression. With a keen eye for detail and a creative mindset, I strive to deliver high-quality solutions tailored to meet my clients' needs.</p>
+            </div>
+            <div class="w-1/2">
+                <img src="../mypic.jpg" alt="Profile Picture" class="rounded-full">
+            </div>
+        </div>
     </div>
-
-
-    <div
-        class="col-span-4 sm:col-span-2 lg:col-span-1 relative px-5 pt-10 pb-2 flex flex-col justify-start items-center border-2 border-gray-300 rounded-xl text-gray-300">
-        <span id="SV" class="absolute -top-6 p-3 border-2 border-gray-300 rounded-full bg-gray-800">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-            aria-hidden="true" class="w-7 h-7 text-yellow-640">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01">
-            </path>
-        </svg>
-    </span>
-        <h2 class="my-1 gradient-red text-base uppercase tracking-wide">Instructions</h2>
-        <p class="py-2 text-center text-sm">Some of the components require fews modifications in your Tailwind config or
-            CSS file. I obviously give you these instructions alongside the code to make sure the components work
-            perfectly.</p>
-    </div>
-
-
-    <div
-        class="col-span-4 sm:col-span-2 lg:col-span-1 relative px-5 pt-10 pb-2 flex flex-col justify-start items-center border-2 border-gray-300 rounded-xl text-gray-300">
-        <span id="SV" class="absolute -top-6 p-3 border-2 border-gray-300 rounded-full bg-gray-800">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-            aria-hidden="true" class="w-7 h-7 text-yellow-640">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z">
-            </path>
-        </svg>
-    </span>
-        <h2 class="my-1 gradient-red text-base uppercase tracking-wide">Javascript</h2>
-        <p class="py-2 text-center text-sm">Complex components may need some cooking and the JavaScript needed to make
-            them awesome is included. So don't worry, you'll get it all !</p>
-    </div>
-
-</div>
+</section>
   
   
 <!-- contact section   -->
@@ -393,7 +371,7 @@
     </div>
 </section>
 
-<footer class="bg-gray-700 p-4 text-white">
+<footer class="w-full m-0 bg-gray-700 p-4 text-white">
   <div class="sm:flex sm:items-center sm:justify-between">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/" class="hover:underline">ABDELALI ELHADDAD</a>. All Rights Reserved.
       </span>
@@ -431,12 +409,12 @@
 
 
 <script>
-  // Initialize ScrollReveal
+  AOS.init();
 </script>
 
 <!-- <script src="./node_modules/typed.js@2.0.12@typed.js"></script> -->
-<script src="/public/script.js"></script>
-<script src="/node_modules/taos/dist/taos.js"></script>
+<script src="../public/script.js"></script>
+<script src="../node_modules/taos/dist/taos.js"></script>
   
 </body>
 </html>
